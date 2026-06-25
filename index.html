@@ -81,8 +81,9 @@
     border-bottom: 1px solid var(--line);
   }
   .nav-in { display: flex; align-items: center; gap: 28px; height: 64px; }
-  .brand { display: inline-flex; align-items: center; gap: 11px; font-family: var(--geo); font-weight: 700; font-size: 23px; }
-  .crow-mark { height: 30px; width: auto; display: block; flex: none; }
+  .brand { display: inline-flex; align-items: center; gap: 12px; font-family: var(--geo); font-weight: 700; font-size: 23px; }
+  .crow-badge { width: 40px; height: 40px; border-radius: 11px; background: #F4F4F4; flex: none; display: inline-flex; align-items: center; justify-content: center; padding: 5px; }
+  .crow-badge img { width: 100%; height: 100%; object-fit: contain; display: block; }
   .wm { text-transform: uppercase; letter-spacing: 0.025em; color: var(--text); line-height: 1; }
   .wm .c { color: var(--cyan); }
   .nav-links { margin-left: auto; display: flex; align-items: center; gap: 26px; }
@@ -238,8 +239,8 @@
   /* footer */
   footer { border-top: 1px solid var(--line); padding: 40px 0 60px; }
   .foot-in { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; justify-content: space-between; }
-  .foot-brand { display: flex; align-items: center; gap: 9px; font-family: var(--geo); font-weight: 700; font-size: 17px; }
-  .foot-brand .crow-mark { height: 22px; }
+  .foot-brand { display: flex; align-items: center; gap: 10px; font-family: var(--geo); font-weight: 700; font-size: 17px; }
+  .foot-brand .crow-badge { width: 28px; height: 28px; border-radius: 8px; padding: 4px; }
   .foot-meta { font-family: var(--mono); font-size: 12.5px; color: var(--muted-2); }
   .foot-links { display: flex; gap: 22px; font-size: 14px; }
   .foot-links a { color: var(--muted); transition: color .15s; }
@@ -269,7 +270,7 @@
 <nav class="nav">
   <div class="wrap nav-in">
     <a class="brand" href="#top" aria-label="opencrow home">
-      <img class="crow-mark" src="crow-mark.png" alt="" aria-hidden="true" width="29" height="30" />
+      <span class="crow-badge"><img src="crow-dark.png" alt="" aria-hidden="true" /></span>
       <span class="wm">open<span class="c">crow</span></span>
     </a>
     <div class="nav-links">
@@ -485,7 +486,7 @@
   <div class="wrap">
     <div class="foot-in">
       <div class="foot-brand">
-        <img class="crow-mark" src="crow-mark.png" alt="" aria-hidden="true" width="21" height="22" />
+        <span class="crow-badge"><img src="crow-dark.png" alt="" aria-hidden="true" /></span>
         <span class="wm">open<span class="c">crow</span></span>
       </div>
       <div class="foot-links">
